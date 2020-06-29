@@ -40,7 +40,7 @@ public class LevelOrderTreeSearch {
         }
     }
     
-    public void addNode(Node node) {
+    private void addNode(Node node) {
         nodes.add(node);
     }
 }

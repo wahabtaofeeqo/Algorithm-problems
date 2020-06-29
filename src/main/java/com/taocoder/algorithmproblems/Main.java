@@ -65,5 +65,11 @@ public class Main {
         
         LevelOrderTreeSearch lots = new LevelOrderTreeSearch(root);
         lots.printLevel();
+        
+        System.out.println("\n\n=====Stable And Unstable=====");
+        StableAndUnstableSort.insertionSortStable(new int[]{12, 11, 2, 3, 1, 30, 5, 20, 50});
+        
+        int[] i = new int[]{12, 11, 2, 3, 1, 30, 5, 20, 50};
+        StableAndUnstableSort.quickSortUnstable(i, 0, i.length - 1);
     }
 }
