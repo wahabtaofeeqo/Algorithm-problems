@@ -71,5 +71,16 @@ public class Main {
         
         int[] i = new int[]{12, 11, 2, 3, 1, 30, 5, 20, 50};
         StableAndUnstableSort.quickSortUnstable(i, 0, i.length - 1);
+        
+        System.out.println("\n\n=====Depth First Search=====");
+        DepthFirstSearch g = new DepthFirstSearch(4);
+        g.addEdge(0, 1); 
+        g.addEdge(0, 2); 
+        g.addEdge(1, 2); 
+        g.addEdge(2, 0); 
+        g.addEdge(2, 3); 
+        g.addEdge(3, 3);
+        
+        g.DFS(0);
     }
 }
